@@ -36,6 +36,7 @@ function contact(event) {
   loading.classList += " modal__overlay--visible";
   emailjs
     .sendForm(
+      "contact_form",
       "service_6he0fjs",
       "template_mkpumtc",
       event.target,
