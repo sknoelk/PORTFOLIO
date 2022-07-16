@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -24,6 +25,8 @@ const analytics = getAnalytics(app);
 
 
 
+=======
+>>>>>>> 500a9b94379e44a2ce48e9d23e93141733e4556d
 let isModalOpen = false;
 let contrastToggle = false;
 const scaleFactor = 1 / 20;
@@ -62,6 +65,10 @@ function contact(event) {
   loading.classList += " modal__overlay--visible";
   emailjs
     .sendForm(
+<<<<<<< HEAD
+=======
+      "contact_form",
+>>>>>>> 500a9b94379e44a2ce48e9d23e93141733e4556d
       "service_6he0fjs",
       "template_mkpumtc",
       event.target,
