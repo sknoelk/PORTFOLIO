@@ -1,32 +1,3 @@
-<<<<<<< HEAD
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyBa_A2LBP-IvyDsa20MNRlCMnCiFIInAJ4",
-  authDomain: "portfolio-42295.firebaseapp.com",
-  projectId: "portfolio-42295",
-  storageBucket: "portfolio-42295.appspot.com",
-  messagingSenderId: "324934702150",
-  appId: "1:324934702150:web:2329c79ccf6d6075312647",
-  measurementId: "G-NWCL7XSYKY"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
-
-
-
-
-=======
->>>>>>> 500a9b94379e44a2ce48e9d23e93141733e4556d
 let isModalOpen = false;
 let contrastToggle = false;
 const scaleFactor = 1 / 20;
@@ -39,14 +10,10 @@ function moveBackground(event) {
   for (let i = 0; i < shapes.length; ++i) {
     const isOdd = i % 2 !== 0;
     const boolInt = isOdd ? -1 : 1;
-    // rotate
-    shapes[i].style.transform = `translate(${x * boolInt}px, ${y * boolInt}px) rotate(${x * boolInt * 70}deg)`
+    // Added rotate after tutorial
+    shapes[i].style.transform = `translate(${x * boolInt}px, ${y * boolInt}px) rotate(${x * boolInt * 10}deg)`
   }
 }
-
-
-
-
 
 function toggleContrast() {
   contrastToggle = !contrastToggle;
@@ -65,10 +32,7 @@ function contact(event) {
   loading.classList += " modal__overlay--visible";
   emailjs
     .sendForm(
-<<<<<<< HEAD
-=======
       "contact_form",
->>>>>>> 500a9b94379e44a2ce48e9d23e93141733e4556d
       "service_6he0fjs",
       "template_mkpumtc",
       event.target,
